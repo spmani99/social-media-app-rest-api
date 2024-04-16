@@ -44,6 +44,7 @@ public class UserResource {
 		service.deleteById(id);
 	}
 	
+	
 	@PostMapping("/users")
 	public ResponseEntity<Object> createUser(@Valid @RequestBody User user) {
 		User savedUser = service.save(user);
